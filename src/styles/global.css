@@ -2,11 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: "Gellato";
-    src: url("../fonts/Gellato Rush.otf");
+@layer base {
+    @font-face {
+      font-family: Montserrat;
+      font-weight: 600;
+      src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap);
+    }
+
+    @font-face {
+      font-family: Montserrat;
+      font-weight: 200;
+      src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap);
+    }
+
+    @font-face {
+        font-family: "Gellato";
+        src: url("../fonts/Gellato Rush.otf");
+    }
 }
 
 header {
-    font-family: "Gellato", georgia, serif;
+    font-family: "Gellato", georgia, sans-serif;
+}
+
+h2 {
+    font-family: "Montserrat", georgia, sans-serif;
 }

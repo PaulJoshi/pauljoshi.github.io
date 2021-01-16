@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: ['./src/**/*.{js,jsx}'],
@@ -15,7 +16,11 @@ module.exports = {
     textColor: {
       primaryText: colors.teal,
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
+      }
+    },
   },
   variants: {
     extend: {},
